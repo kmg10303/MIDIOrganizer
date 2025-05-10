@@ -139,14 +139,14 @@ def generate_midi_mashups(request):
                         solo_folder = f"{song['key']}/{song['name']}"
                         files_to_zip.append({
                             'source_path': song['file_path'],
-                            'zip_path': f"{solo_folder}/{song['name']}^{song['artist']}^{round(song['bpm'])}^{song['key']}^Song A.mp3"
+                            'zip_path': f"{solo_folder}/{song['name']}^{song['artist']}^{song['key']}^{round(song['bpm'])}^Song A.mp3"
                         })
                         csv_data.append({
                             'Song A Title': song['name'],
                             'Song A Artist': song['artist'],
                             'Song A Key': song['key'],
                             'Song A Tempo': round(song['bpm'], 1),
-                            'Song A Path': f"{solo_folder}/{song['name']}^{song['artist']}^{round(song['bpm'])}^{song['key']}^Song A.mp3",
+                            'Song A Path': f"{solo_folder}/{song['name']}^{song['artist']}^{song['key']}^{round(song['bpm'])}^Song A.mp3",
                             'Song B Title': '',
                             'Song B Artist': '',
                             'Song B Key': '',

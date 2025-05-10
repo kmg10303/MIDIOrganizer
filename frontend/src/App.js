@@ -45,7 +45,7 @@ function App() {
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = outputFormat === 'csv' ? 'mashups.csv' : 'mashups.zip';
+      a.download = outputFormat === 'csv' ? 'mashups.csv' : 'mashups-midi.zip';
       document.body.appendChild(a);
       a.click();
       a.remove();
