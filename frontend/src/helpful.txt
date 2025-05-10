@@ -1,0 +1,4 @@
+// example in a React component
+fetch('http://localhost:8000/api/hello/')
+  .then(res => res.json())
+  .then(data => console.log(data));
